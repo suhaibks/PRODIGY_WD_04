@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <footer className="footer">
-      <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+      <p>&copy; {currentYear} Suhaib K S. All rights reserved.</p>
       <div className="footer-links">
         <a href="#hero">Home</a>
         <a href="#projects">Projects</a>
