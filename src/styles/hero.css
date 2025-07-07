@@ -1,0 +1,125 @@
+/* hero.css */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
+    min-height: 90vh;
+    background: linear-gradient(to bottom right, #eef2ff, #ffffff);
+  }
+  
+  .hero-content {
+    flex: 1 1 50%;
+    max-width: 500px;
+    animation: fadeInLeft 1s ease-out;
+  }
+  
+  .hero-photo img {
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 35px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: fadeInRight 1s ease-out;
+  }
+  
+  .highlight {
+    color: #4f46e5;
+  }
+  
+  .typewriter {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 100%;
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  }
+  
+  .hero-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: #4f46e5;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #3730a3;
+  }
+  
+  .btn-secondary {
+    background: #e0e7ff;
+    color: #1e1b4b;
+  }
+  
+  .btn-secondary:hover {
+    background: #c7d2fe;
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  
+  .typewriter-mobile {
+    font-family: monospace;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    min-height: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .cursor {
+    display: inline-block;
+    margin-left: 2px;
+    width: 1px;
+    background-color: #333;
+    animation: blinkCursor 0.8s infinite;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  @media (min-width: 769px) {
+    .typewriter-mobile {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .desktop-headline {
+      display: none;
+    }
+  }
+  
